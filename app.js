@@ -2,7 +2,11 @@ import {
     initializeApp
 } from
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-
+import{
+    getAuth,
+    signInAnonymously
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
 import {
     getDatabase,
@@ -26,11 +30,11 @@ const firebaseConfig = {
 
 const app =
     initializeApp(firebaseConfig);
-
-
+const auth =
+    getAuth(app);
 const db =
     getDatabase(app);
-
+await signInAnonymously(auth);
 
 // ======================================================
 // ЭЛЕМЕНТЫ
