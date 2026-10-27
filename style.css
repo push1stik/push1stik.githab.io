@@ -1,1 +1,323 @@
+* {
+    box-sizing: border-box;
+}
 
+
+html {
+    min-height: 100%;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #24103d 0%,
+            #100817 35%,
+            #08060c 75%
+        );
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------
+   ФОНОВОЕ СВЕЧЕНИЕ
+------------------------------ */
+
+.background-glow {
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 0.25;
+
+    pointer-events: none;
+}
+
+
+.glow-1 {
+    top: -200px;
+    left: -100px;
+
+    background: #8b3dff;
+}
+
+
+.glow-2 {
+    right: -150px;
+    bottom: -200px;
+
+    background: #5d16c8;
+}
+
+
+/* ------------------------------
+   ОСНОВНАЯ ОБЛАСТЬ
+------------------------------ */
+
+.page {
+    position: relative;
+
+    width: min(1200px, 94%);
+
+    margin: 0 auto;
+
+    padding: 30px 0 25px;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+.logo {
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.logo span {
+    color: #a855f7;
+}
+
+
+.online {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(168, 85, 247, 0.25);
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #cfc8d8;
+
+    font-size: 13px;
+}
+
+
+.online-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #b46cff;
+
+    box-shadow:
+        0 0 10px #a855f7;
+}
+
+
+/* ------------------------------
+   VIDEO
+------------------------------ */
+
+.video-container {
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(168, 85, 247, 0.25);
+
+    border-radius: 20px;
+
+    background:
+        rgba(15, 10, 22, 0.8);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.45),
+
+        0 0 60px
+        rgba(126, 34, 206, 0.08);
+}
+
+
+.video-wrapper {
+    width: 100%;
+
+    background: #000;
+
+    aspect-ratio: 16 / 9;
+}
+
+
+video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* ------------------------------
+   INFO
+------------------------------ */
+
+.video-info {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 25px;
+}
+
+
+.video-info h1 {
+    margin: 0 0 7px;
+
+    font-size: 21px;
+
+    font-weight: 600;
+}
+
+
+.video-info p {
+    margin: 0;
+
+    color: #8f8798;
+
+    font-size: 13px;
+}
+
+
+.sync-status {
+    flex-shrink: 0;
+
+    padding: 8px 13px;
+
+    border-radius: 8px;
+
+    background: rgba(168, 85, 247, 0.08);
+
+    border: 1px solid
+        rgba(168, 85, 247, 0.15);
+
+    color: #b879ff;
+
+    font-size: 12px;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+.footer {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 22px;
+
+    color: #5f5868;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .page {
+        width: 96%;
+
+        padding-top: 18px;
+    }
+
+
+    .header {
+        margin-bottom: 18px;
+    }
+
+
+    .logo {
+        font-size: 17px;
+    }
+
+
+    .online {
+        font-size: 11px;
+
+        padding: 7px 10px;
+    }
+
+
+    .video-container {
+        border-radius: 13px;
+    }
+
+
+    .video-info {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 17px;
+    }
+
+
+    .video-info h1 {
+        font-size: 17px;
+    }
+
+
+    .video-info p {
+        line-height: 1.5;
+    }
+
+
+    .sync-status {
+        font-size: 11px;
+    }
+  }
