@@ -14,30 +14,13 @@ import {
 } from
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
-
-// ======================================================
-// FIREBASE
-// ======================================================
-//
-// ВСТАВЬ СЮДА ДАННЫЕ СВОЕГО FIREBASE ПРОЕКТА
-//
-
 const firebaseConfig = {
-
-    apiKey: "ВСТАВЬ_API_KEY",
-
-    authDomain: "ВСТАВЬ_AUTH_DOMAIN",
-
-    databaseURL: "ВСТАВЬ_DATABASE_URL",
-
-    projectId: "ВСТАВЬ_PROJECT_ID",
-
-    storageBucket: "ВСТАВЬ_STORAGE_BUCKET",
-
-    messagingSenderId:
-        "ВСТАВЬ_MESSAGING_SENDER_ID",
-
-    appId: "ВСТАВЬ_APP_ID"
+  apiKey: "AIzaSyBMaJdazsJhen9S7yUEnNnAOQvXozfaaVQ",
+  authDomain: "video-room-a6715.firebaseapp.com",
+  projectId: "video-room-a6715",
+  storageBucket: "video-room-a6715.firebasestorage.app",
+  messagingSenderId: "996822821164",
+  appId: "1:996822821164:web:2afe5ee709ade37f9a6489"
 };
 
 
