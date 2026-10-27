@@ -21,6 +21,7 @@ import {
 const firebaseConfig = {
   apiKey: "AIzaSyBMaJdazsJhen9S7yUEnNnAOQvXozfaaVQ",
   authDomain: "video-room-a6715.firebaseapp.com",
+  databaseURL:"https://video-room-a6715-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "video-room-a6715",
   storageBucket: "video-room-a6715.firebasestorage.app",
   messagingSenderId: "996822821164",
